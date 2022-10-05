@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    th {
+      color: blue;
+      background: aqua;
+      text-align: left;
+    }
+    td {
+      color: red;
+    }
+    table {
+      background: greenyellow;
+    }
+    #diachi{
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+<form action="">
+  <table >
+    <tr>
+      <th colspan="3">Đăng kí học viên</th>
+    </tr>
+    <tr>
+      <td>Họ và tên</td>
+      <td colspan="2"><input type="text"></td>
+    </tr>
+      <tr>
+      <td>Ngày Sinh</td>
+      <td colspan="3"><input type="text"></td>
+    </tr>
+      <tr>
+      <td>Gioi tính</td>
+      <td style="color: black"><input type="radio">Nam</td>
+        <td style="color: black"><input type="radio">Nữ</td>
+      </tr>
+    <tr>
+      <td id="diachi">Địa chỉ</td>
+      <td colspan="2">
+        <textarea name="diachi" cols="21" rows="3"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>Lớp</td>
+      <td colspan="2">
+        <select name="" id="">
+          <option value="">--Chọn lớp--</option>
+          <option value="">Lớp 1</option>
+          <option value="">Lớp 2</option>
+          <option value="">Lớp 3</option>
+        </select>
+      </td>
+
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td colspan="2"><input type="email"></td>
+    </tr>
+    <tr>
+      <td>Điện thoại</td>
+      <td colspan="2"><input type="text"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Đăng kí"></td>
+      <td><input type="reset" value="Nhập lại"></td>
+      <td></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
