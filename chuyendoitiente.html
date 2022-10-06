@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>Form currency</th>
+    <th>To currency</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>
+      <input type="text" id="amount">
+    </td>
+    <td>
+      <select id="from">
+        <option value="Vietnam">Vietnam</option>
+        <option value="USD">USD</option>
+      </select>
+    </td>
+    <td>
+      <select id="to">
+        <option value="Vietnam">Vietnam</option>
+        <option value="USD">USD</option>
+      </select>
+    </td>
+    <td>
+      <button onclick="convert()">Convert</button>
+    </td>
+    <tr>
+  <td id="ketqua"></td>
+    </tr>
+</table>
+
+<script src="chuyendoitien.js"></script>
+</body>
+</html>
