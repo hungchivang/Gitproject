@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<p>nhap tu</p>
+<input type="text" id="a">
+<input type="button" value="Dich" onclick="dich()">
+<p id="result"></p>-->
+</body>
+<script>
+    //bai 1
+    /*let myColor = ["Red", "Green", "White", "Black"];
+    let a=myColor.join();
+    document.write(a);*/
+
+    //bai 2
+    /*let a =prompt("nhap day so a bat ki");
+    let mang1 = a.toString();
+    let mang2 = [mang1[0]];
+    for (let i=1;i<mang1.length;i++) {
+        if (mang1[i-1]%2===0 && mang1[i]%2===0) {
+            mang2.push("-",mang1[i]);
+        } else {
+            mang2.push(mang1[i]);
+        }
+    }
+    document.write(mang2.join(""));*/
+
+    //bai 3
+    /*let chuoi=prompt("nhap chuoi ki tu abc bat ki");
+    let mang1 = chuoi.toString();
+    let upper ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let lower = "abcdefghijklmnopqrstuvwxyz";
+    let mang2 = [];
+    for (let i=0;i<mang1.length;i++) {
+        if (upper.indexOf(mang1[i]) !== -1) {
+            mang2.push(mang1[i].toLowerCase());
+        } else if (lower.indexOf(mang1[i])!== -1) {
+            mang2.push(mang1[i].toUpperCase());
+        } else {
+            mang2.push(mang1[i]);
+        }
+    }
+    document.write(mang2.join(" "));*/
+
+    //tu dien
+    /*function dich() {
+        let tienganh = ["apple", "banana", "orrange", "date", "month"];
+        let tiengviet = ["tao", "chuoi", "cam", "ngay", "thang"];
+        let value = document.getElementById("a").value;
+        let chiso = 0;
+        let result = "";
+        for (let i = 0; i < tienganh.length; i++) {
+            if (value == tienganh[i]) {
+                chiso = i;
+                for (let j = 0; j < tiengviet.length; j++) {
+                    if (chiso == j) {
+                        result = tiengviet[j];
+                    }
+                }
+            }
+        }
+        document.getElementById("result").innerHTML=result;
+    }*/
+
+    //dem so luong so chan,le tren mang cac so nguyen
+    let array = [12, 6, 7, 13, 5, 9, 16];
+    let a = [];
+    let b = [];
+    for (i = 0; i < array.length; i++) {
+        if (array[i] % 2 == 0) {
+            a.push(array[i]);
+        }
+    }
+    document.write("so chan tron mang la :" + a.length);
+    let c = array.length - a.length;
+    document.write("so le trong mang la :" + c);
+
+function check(n) {
+    let dem = true ;
+    for (let i = 2; i < n - 1; i++) {
+        if (n % i == 0) {
+            dem = false;
+            break;
+        }
+    }
+    return dem;
+}
+for (i=0;i<array.length;i++) {
+    if (check(array[i]) == true) {
+        b.push(array[i]);
+    }
+}
+document.write("so nguyen to trong mang la :" +b.length);
+
+//bai3
+    array.splice(2,1);
+    document.write(array);
+</script>
+</html>
