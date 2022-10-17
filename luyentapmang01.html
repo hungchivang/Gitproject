@@ -7,4 +7,80 @@
 <body>
 
 </body>
+<script>
+    //bai 1
+    /*let array =[10,2,5,15,4,7,98,23,2,31];
+    let a = [];
+    for (i=0;i<10;i++) {
+        if (array[i] >= 10) {
+            a.push(array[i]);
+        }
+    }
+    document.write(a);*/
+
+    //bai 2
+    /*let array =[10,2,5,15,4,7,98,23,2,31];
+    let a = Math.max.apply(null,array);
+    document.write("gia tri lon nhat cua mang la :" + a);
+    document.write("vi tri lon nhat cua mang la :" + array.indexOf(a));*/
+
+    // bai3
+    /*let array =[10,2,5,15,4,7,98,23,2,31];
+ let b=0;
+ for (i=0;i<array.length;i++) {
+     b = (b + array[i])/array.length;
+ }
+ //document.write("gia tri trung binh cua mang la :" + b);
+
+ //bai 4
+    let ngc =[];
+    ngc = array.reverse();
+    document.write(ngc);*/
+
+    // bai 5
+    /*let array =[10,-2,5,15,4,7,-98,23,2,-31];
+ let nguyenam=0;
+ for (i=0;i<array.length;i++) {
+     if (array[i]<0) {
+         nguyenam++;
+     }
+ }
+ alert("so nguyen am la :" + nguyenam);*/
+
+    //bai6
+    /*let array =[10,-2,5,15,4,7,-98,23,2,-31];
+ let v = prompt("nhap so a bat ki");
+ for (i=0;i<array.length;i++) {
+     if (v == array[i]) {
+         alert("v is in the array");
+         break;
+     } else {
+         alert("v is not in the array");
+         break;
+     }
+ }*/
+
+    //bai 7
+    /*let array = [10, -2, 5, 15, 4, 7, -98, 23, 2, -31];
+    let b = [];
+    let v = prompt("nhap so a bat ki");
+    for (i = 0; i < array.length; i++) {
+        if (v == array[i]) {
+            array.splice(i, 1);
+        }
+    }
+    array.push(0);
+    document.write(array);*/
+
+    // bai 8
+    /*let array = [10, -2, 5, 54, 4, 8, -98, 23, 2, -31];
+    array.sort( function check(a,b) {return b-a});
+    document.write(array);*/
+
+    //bai 9
+    let a = [10, -2, 5, 54, 4, 8, -98, 23, 2, -31];
+    let b = [5, -2, 5, 114, 2, 1, 8, 10, 4, 1];
+    let c = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    document.write(c + "," + a +"," +b);
+</script>
 </html>
