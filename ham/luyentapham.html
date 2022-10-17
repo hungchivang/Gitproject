@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- <p style="font-weight: bold">Temperrature Converter</p>
+<p>Type a value in the Fahrenheit field to convert the value</p>
+Fahrenheit <input type="number" id="giatri" onchange="chuyendoi()"></input> <br>
+Celcius : <p id="result"></p> -->
+</body>
+<script>
+    // bai 1.viet ham kiem tra 1 ki tu nhap vao co phai la so hay khong?
+    /*function hamkiemtra() {
+      let a = prompt("nhap a bat ki");
+      if (a % a ==0) {
+        return true;
+      }
+      return false;
+      }
+  document.write(hamkiemtra());*/
+
+    // bai 2.viet ham truyen vao 3 so.tra ve so o giua.
+    /*function bai2(a,b,c) {
+      if ((a>b && b>c) || (a<b && b<c)) {
+   return b;
+      } else if ((a<b && a>c) || (a<c && a>b)){
+        return a;
+      }else if ((a<c && c< b) || (a>c && c>b)){
+          return c;
+      } else {
+          alert("Khong co so o giua");
+      }
+    }
+   let result= bai2(4,6,5);
+    document.write("so o giua la :" + result);*/
+
+    // bai 3.viet ham truyen vao 1 mang, va 1 ki tu bat ki.kiem tra xem ki tu do co trong mang hay khong
+    /*function bai3(array, d) {
+        for (i = 0; i < array.length; i++) {
+            if (array[i] === d) {
+                return true;
+                break;
+            }
+        }
+        return false;
+    }
+
+    let array = ["a", "b", "c"];
+    let d = "a";
+    document.write(bai3(array, d));*/
+
+
+    // Thực hànhTạo và gọi hàm
+    /*function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Excellent. We'll play a nice game of chess.";
+        } else {
+            result = "Maybe later then.";
+        }
+        return result;
+    }
+    let confirmAnswer = confirm("Shall we play a game?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);*/
+
+    // [Thực hành] Chuyển đổi nhiệt độ
+
+    /*function chuyendoi() {
+        let doF = document.getElementById("giatri").value;
+        document.getElementById("result").innerHTML=(doF-32)/1.8;}*/
+
+    //[Thực hành] Tìm giá trị nhỏ nhất của mảng
+    function somin(arr) {
+        if (arr.length == 0) {
+            return -1;
+        }
+        let min = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    let arr1 = [3, 5, 1, 8, -3, 7, 8];
+    document.write(somin(arr1) + "<br>");
+    let arr2 = [7, 12, 6, 9, 20, 56, 89];
+    document.write(somin(arr2) + "<br>");
+    let arr3 = [0, 0, 0, 0, 0];
+    document.write(somin(arr3) + "<br>");
+    let arr4 = [];
+    document.write(somin(arr4) + "<br>");
+
+</script>
+</html>
