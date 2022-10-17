@@ -54,14 +54,15 @@
         let chiso = 0;
         let result = "";
         for (let i = 0; i < tienganh.length; i++) {
-            if (value == tienganh[i]) {
+            if (value === tienganh[i]) {
                 chiso = i;
                 for (let j = 0; j < tiengviet.length; j++) {
-                    if (chiso == j) {
+                    if (chiso === j) {
                         result = tiengviet[j];
                     }
                 }
             }
+            return result;
         }
         document.getElementById("result").innerHTML=result;
     }*/

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //[Bài tập] Hàm kiểm tra số nguyên tố
+    /*function isprime(number) {
+        let dem = true;
+        if (number < 2) {
+            dem = false;
+        }
+        for (i = 2; i < number; i++) {
+            if (number % i == 0) {
+                dem = false;
+                break;
+            }
+        }
+        return dem;
+    }
+
+    for (let i = 0; i < 100; i++) {
+        if (isprime(i) == true) {
+            document.write(i + "<br>");
+        }
+    }*/
+
+    //[Bài tập] Chuyển đổi giữa feet và meters
+    function feetToMeter(feet) {
+        document.write(feet + " feet" + " = " + 0.305 * feet + " meter" + "<br>");
+    }
+
+    function meterToFeet(meter) {
+        document.write(meter + " meter" + " = " + 3.279 * meter + " feet" + "<br>");
+    }
+
+    let result1 = feetToMeter(10);
+    let result2 = meterToFeet(60);
+
+</script>
+</html>
