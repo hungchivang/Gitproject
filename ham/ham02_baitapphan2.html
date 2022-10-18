@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào.
+    /*function binhphuong(a) {
+        return (a*a);
+    }
+    let result= binhphuong(5);
+   document.write(result);*/
+
+    // bai 2 Viết hàm tính diện tích, hàm tính chu vi hình tròn
+    /*function chuvi(r) {
+        return (2 * r * Math.PI);
+    }
+
+    function dientich(r) {
+        return (r * r * Math.PI);
+    }
+
+    let result1 = chuvi(10);
+    let result2 = dientich(10);
+    document.write("chu vi hinh tron la : " + result1 + "<br>");
+    document.write("dien tich hinh tron la : " + result2);*/
+
+    //Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào
+    /*function giaithua(a) {
+        let kq = 1;
+        for (let i = a; i >0; i--) {
+            kq = kq * i;
+        }
+        return kq;
+    }
+    let result = giaithua(7);
+    document.write("giai thua cua a la " + result);*/
+
+    // bai 4.viet ham kiem tra 1 ki tu nhap vao co phai la so hay khong?
+    /*function hamkiemtra() {
+      let a = prompt("nhap a bat ki");
+      if (a % a ==0) {
+        return true;
+      }
+      return false;
+      }
+  document.write(hamkiemtra());*/
+
+    //Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+    /*function checkmin(a, b, c) {
+        let min = a;
+        if (b < a && b < c) {
+            min = b;
+        } else if (c < a && c < b) {
+            min = c;
+        }
+        return min;
+    }
+
+    let result = checkmin(18, 9, 11);
+    document.write("so nguyen be nhat la :" + result);*/
+
+    //Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+    //Nếu là nguyên dương trả về true, ngược lại trả về false.
+    /*function songuyen(a) {
+        if (a>0) {
+            document.write("true");
+        } else {
+            document.write("false");
+        }
+    }
+    songuyen(-2);*/
+
+    //Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    /*function swap(a, b) {
+        return [b,a];
+    }
+
+    let kq = swap(-6, 2);
+    document.write(kq);*/
+
+// Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+    /*function daonguoc(arr) {
+        return arr.reverse();
+    }
+let arr=[1,2,5,-5,-9,3];
+    document.write(daonguoc(arr));*/
+
+    //Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ,
+function check(arr, a) {
+    let count = 0;
+    for (let i=0;i<arr.length;i++) {
+        if (a === arr[i]) {
+            count += 1;
+        }
+    }
+    if (count > 0) {
+        return count;
+    } else {
+        return -1;
+    }
+}
+let kq = check(["hung","phuong","tuong","hung", "nam","hung"],"hung");
+document.write(kq);
+
+
+</script>
+</html>
