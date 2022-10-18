@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Add New Product</h1>
+<div style="padding: 30px;background: orange;width: 300px"><input type="text" id="nhap" placeholder="New Product">
+    <button onclick="add()" style="background: lawngreen">Add</button>
+</div>
+<h4>Display All Product</h4>
+<b> Product Name</b><br>
+<b id="sum"></b>
+<table id="show" style="width: 400px"></table>
+</body>
+<script>
+    let names = ["Sony xperia", "Samsung galaxy", "Nokia"]
+    let divshow = document.getElementById("show");
+
+    function show() {
+        let srt = "";
+        for (let i = 0; i < names.length; i++) {
+            srt += "<tr>";
+            srt += "<td>" + names[i] + "</td>";
+            srt += "<td><button style='background: lawngreen' onclick='sua("+ i + ")'>Edit</button></td>";
+            srt += "<td><button style='background: lawngreen' onclick='xoa(" + i + ")'>Delete</button></td>";
+            srt += "</tr>";
+        }
+        divshow.innerHTML = srt;
+        document.getElementById("sum").innerHTML = names.length + " product";
+    }
+    show();
+
+    function add() {
+        let input = document.getElementById("nhap").value;
+        names.push(input);
+        show();
+        document.getElementById("sum").innerHTML = names.length + " product";
+    }
+
+    function xoa(index) {
+        names.splice(index,1);
+        show();
+        document.getElementById("sum").innerHTML = names.length + " product";
+    }
+
+    function sua(index) {
+let a=prompt("nhap thong tin can sua");
+names.splice(index,1,a);
+show();
+        document.getElementById("sum").innerHTML = names.length + " product";
+    }
+
+</script>
+</html>
