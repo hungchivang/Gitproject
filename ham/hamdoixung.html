@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let flag=true;
+ function isPalindrome(a) {
+     let arr1 = a.split("");
+     let arr2 = arr1.reverse();
+
+   for (let i = 0; i < arr1.length; i++) {
+       if (arr1[i] !== arr2[i]) {
+           flag = false;
+       }
+   }
+     return flag;
+ }
+isPalindrome("rotorrra");
+
+
+
+
+
+
+
+
+
+</script>
+</html>

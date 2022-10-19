@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" style="border: 2px solid red"></canvas>
+</body>
+<script>
+    function MyCircle(x, y, radius) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+    }
+
+function ColorRandom() {
+
+        let red =Math.floor(Math.random()*255);
+        let blue =Math.floor(Math.random()*255);
+    let green =Math.floor(Math.random()*255);
+    return "rgb("+red+","+blue+","+green+")";
+}
+
+    function Circle() {
+        let context = document.getElementById("myCanvas").getContext("2d");
+        let x = Math.floor(Math.random() * innerWidth);
+        let y = Math.floor(Math.random() * innerHeight);
+        let radius = Math.floor(Math.random() * 50);
+        let color = ColorRandom();
+        let creta = new MyCircle(x, y, radius);
+        context.beginPath();
+        context.arc(creta.x,creta.y,creta.radius,0,2*Math.PI);
+        context.fillStyle = color;
+context.fill();
+    }
+    function multipleCircle() {
+        for (let i=0;i<20;i++) {
+            Circle();
+        }
+    }
+    multipleCircle();
+
+</script>
+</html>

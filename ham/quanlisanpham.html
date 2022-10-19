@@ -23,13 +23,14 @@
         for (let i = 0; i < names.length; i++) {
             srt += "<tr>";
             srt += "<td>" + names[i] + "</td>";
-            srt += "<td><button style='background: lawngreen' onclick='sua("+ i + ")'>Edit</button></td>";
+            srt += "<td><button style='background: lawngreen' onclick='sua(" + i + ")'>Edit</button></td>";
             srt += "<td><button style='background: lawngreen' onclick='xoa(" + i + ")'>Delete</button></td>";
             srt += "</tr>";
         }
         divshow.innerHTML = srt;
         document.getElementById("sum").innerHTML = names.length + " product";
     }
+
     show();
 
     function add() {
@@ -40,15 +41,15 @@
     }
 
     function xoa(index) {
-        names.splice(index,1);
+        names.splice(index, 1);
         show();
         document.getElementById("sum").innerHTML = names.length + " product";
     }
 
     function sua(index) {
-let a=prompt("nhap thong tin can sua");
-names.splice(index,1,a);
-show();
+        let a = prompt("nhap thong tin can sua");
+        names.splice(index, 1, a);
+        show();
         document.getElementById("sum").innerHTML = names.length + " product";
     }
 

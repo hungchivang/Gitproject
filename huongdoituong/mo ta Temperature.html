@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ let Temperature = function (DoC) {
+     this.DoC = DoC;
+     this.getDoC = function () {
+         return this.DoC;
+     }
+     this.getDoF = function () {
+         return (this.DoC*1.8) + 32;
+     }
+     this.getDoK =function () {
+         return this.DoC + 273.15;
+     }
+ };
+
+ let myTemperature = new Temperature(25);
+ let doC = myTemperature.getDoC();
+ let doF = myTemperature.getDoF();
+ let doK = myTemperature.getDoK();
+
+ document.write(doC + " độ C" + " = "+ doF+" độ F" +" và "+ doK+ " độ K");
+
+
+</script>
+</body>
+</html>
