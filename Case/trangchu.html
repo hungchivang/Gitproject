@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="background: lightskyblue;width: 1200px;height: 100px">
+    <img src="anhchinh.gif" style="width: 200px;height: 100px" alt=""></div>
+<div style="background: blue;width: 1200px">
+    <table>
+        <tr style="color: white; text-align-all: center;display: inline-block">
+            <td>TRANG CHỦ</td>
+            <td>GIỚI THIỆU</td>
+            <td>HỆ THỐNG PHÒNG</td>
+            <td>LIÊN HỆ</td>
+        </tr>
+    </table>
+</div>
+<div class="image">
+    <img id="img" src="anh1.jpg" onclick="changeImage()" alt="">
+</div>
+<div id="div1">
+    <table>
+        <tr>
+            <th colspan="10" style="font-size: 20px">Đặt Phòng</th>
+        </tr>
+        <tr>
+            <th colspan="10" style="font-size: 11px">Các trường được đánh dấu (*) là bắt buộc</th>
+        </tr>
+        <br/>
+        <tr>
+            <td>Họ và tên <span style="color: red">*</span></td>
+            <td>Điện thoại <span style="color: red">*</span></td>
+            <td>Email <span style="color: red">*</span></td>
+        </tr>
+        <tr>
+            <td><input id="inputName" type="text"></td>
+            <td><input id="inputPhone" type="number"></td>
+            <td><input id="inputEmail" type="email"></td>
+        </tr>
+        <tr>
+            <td >Loại Phòng</td>
+            <td >Số người</td>
+            <td >Trẻ em</td>
+        </tr>
+        <tr>
+            <td>
+                <select name="" id="inputRoom" style="width: 180px">
+                    <option value=""></option>
+                    <option value="">Một giường đôi</option>
+                    <option value="">Hai giường đôi</option>
+                    <option value="">Ba giường đôi</option>
+                    <option value="">Phòng VIP</option>
+                </select>
+            </td>
+            <td><input id="inputPerson" type="number"></td>
+            <td><input id="inputBaby" type="number"></td>
+        </tr>
+        <tr>
+            <td>Ngày đi</td>
+            <td>Ngày về</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><input id="inputDayIn" type="date" style="width: 175px"></td>
+            <td><input id="inputDayOut" type="date" style="width: 175px"></td>
+            <td><button onclick="add()" style="background: red;color: white;width: 175px;font-weight: bold" >Đặt Phòng</button></td>
+        </tr>
+    </table>
+</div>
+<div style="background:lightblue ;width: 1200px;height: 300px">
+    <table>
+        <tr>
+            <th colspan="10" style="font-size: 20px">Quản Lý Phòng</th>
+        </tr>
+        <br/>
+        <tr>
+            <th>Họ và tên</th>
+            <th>Điện thoại</th>
+            <th>Email</th>
+            <th>Loại phòng</th>
+            <th>Số người</th>
+            <th>Trẻ em</th>
+            <th>Ngày đi</th>
+            <th>Ngày về</th>
+            <th>Chỉnh sửa</th>
+        </tr>
+        <tbody id="show"></tbody>
+    </table>
+</div>
+
+</body>
+<script src="main.js"></script>
+<link rel="stylesheet" href="style.css">
+</html>

@@ -31,12 +31,11 @@
         }
     };
     let myRectangle = new Rectangle(200, 600);
-    let width = myRectangle.getWidth();
-    let long = myRectangle.getLong();
 
     myRectangle.setLong();
     myRectangle.setWidth();
-
+    let width = myRectangle.getWidth();
+    let long = myRectangle.getLong();
 
     let perimeter = myRectangle.getPerimeter();
     let area = myRectangle.getArea();
@@ -45,7 +44,7 @@
     let canvas = document.getElementById("myCanvas");
     let ctx = canvas.getContext("2d");
     ctx.fillStyle = "red";
-    ctx.fillRect(100, 100, width, long);
+    ctx.fillRect(50, 50, width, long);
 
 </script>
 </html>

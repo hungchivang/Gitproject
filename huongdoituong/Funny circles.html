@@ -9,13 +9,12 @@
 </body>
 <script>
     function MyCircle(x, y, radius) {
-        this.x = x;
+        this.a = x;
         this.y = y;
         this.radius = radius;
     }
 
 function ColorRandom() {
-
         let red =Math.floor(Math.random()*255);
         let blue =Math.floor(Math.random()*255);
     let green =Math.floor(Math.random()*255);
@@ -30,9 +29,9 @@ function ColorRandom() {
         let color = ColorRandom();
         let creta = new MyCircle(x, y, radius);
         context.beginPath();
-        context.arc(creta.x,creta.y,creta.radius,0,2*Math.PI);
+        context.arc(creta.a,creta.y,creta.radius,0,2*Math.PI);
         context.fillStyle = color;
-context.fill();
+        context.fill();
     }
     function multipleCircle() {
         for (let i=0;i<20;i++) {
