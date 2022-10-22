@@ -31,10 +31,10 @@ class Object {
     }
 }
 
-let person1 = new Object("Âu Mạnh Tường", "0368568751", "Vantu@gmail.com", "Một giường đôi", 2, 0, "20/10/2022", "30/10/2022");
-let person2 = new Object("Nguyễn Phi Hùng", "0366684662", "hungnguyen@gmail.com", "Hai giường đôi", 5, 2, "14/11/2022", "18/11/2022");
-let person3 = new Object("Mai Minh Phương", "0974492555", "phuongcoi@gmail.com", "Ba giường đôi", 7, 0, "20/9/2022", "5/10/2022");
-let person4 = new Object("Trần Văn Tú", "0398384812", "tu182@gmail.com", "Phòng VIP", 3, 1, "15/7/2022", "14/10/2022");
+let person1 = new Object("Âu Mạnh Tường", "0368568751", "Vantu@gmail.com", "Một giường đôi", 2, 0, "2022-10-20", "2022-10-30");
+let person2 = new Object("Nguyễn Phi Hùng", "0366684662", "hungnguyen@gmail.com", "Hai giường đôi", 5, 2, "2022-11-14", "2022-11-18");
+let person3 = new Object("Mai Minh Phương", "0974492555", "phuongcoi@gmail.com", "Ba giường đôi", 7, 0, "2022-12-5", "2022-12-30");
+let person4 = new Object("Trần Văn Tú", "0398384812", "tu182@gmail.com", "Phòng VIP", 3, 1, "2022-7-15", "2022-10-14");
 let Objects = [person1, person2, person3, person4];
 let divshow = document.getElementById("show");
 
@@ -51,6 +51,7 @@ function show() {
         srt += "<td>" + Objects[i].checkin + "</td>";
         srt += "<td>" + Objects[i].checkout + "</td>";
         srt += "<td><button style='background: lawngreen' onclick='sua(" + i + ")'>Sửa</button></td>";
+        srt += "<td><button style='background: lawngreen' onclick='luu(" + i + ")'>Lưu</button></td>";
         srt += "<td><button style='background: lawngreen' onclick='xoa(" + i + ")'>Xóa</button></td>";
         srt += "</tr>";
     }
@@ -91,9 +92,30 @@ function xoa(index) {
 }
 
 function sua(index) {
-
-
-
+    document.getElementById("inputName").value = Objects[index].name;
+    document.getElementById("inputPhone").value = Objects[index].phone;
+    document.getElementById("inputEmail").value = Objects[index].email;
+    document.getElementById("inputRoom").value = Objects[index].roomStyle;
+    document.getElementById("inputPerson").value = Objects[index].person;
+    document.getElementById("inputBaby").value = Objects[index].baby;
+    document.getElementById("inputDayIn").value = Objects[index].checkin;
+    document.getElementById("inputDayOut").value = Objects[index].checkout;
 }
 
-
+function luu(index) {
+    let name = document.getElementById("inputName").value;
+    let phone = document.getElementById("inputPhone").value;
+    let email = document.getElementById("inputEmail").value;
+    let roomStyle = document.getElementById("inputRoom").value;
+    let person = document.getElementById("inputPerson").value;
+    let baby = document.getElementById("inputBaby").value;
+    let checkin = document.getElementById("inputDayIn").value;
+    let checkout = document.getElementById("inputDayOut").value;
+    let newObjects = new Object(name, phone, email, roomStyle, person, baby, checkin, checkout)
+    Objects.splice(index, 1, newObjects);
+    show();
+    Clear();
+}
+function dieuhuong() {
+    location.assign("trang chu chinh.html");
+}

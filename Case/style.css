@@ -1,25 +1,71 @@
+
 .image img {
     height: 500px;
     width: 1200px;
 }
 
-
-
 th {
     width: 100px;
     text-align: center;
 }
+
 #show {
     text-align: center;
     width: 50px;
 }
+#div1 img {
+    width: 200px;
+    height: 100px;
+}
+
 #div1 {
-    background:lightskyblue ;
+    background: lightskyblue;
+    width: 1200px;
+    height: 100px;
+}
+
+#div2 {
+    background: blue;
+    width: 1200px;
+}
+
+#div2 table tr {
+    color: white;
+    text-align-all: center;
+    display: inline-block;
+}
+#div3 {
+    background: lightseagreen;
     width: 1200px;
     height: 300px;
 }
-#div1 table td {
+
+#div3 table td {
     text-align: center;
     width: 400px;
     font-weight: bold;
+}
+#div3 table button {
+    background: red;
+    color: white;
+    width: 175px;
+    font-weight: bold;
+}
+
+#div4 {
+    background: lightblue;
+    width: 1200px;
+    height: 300px;
+}
+
+#div4 tbody {
+text-align: center;
+}
+
+#div5 {
+    background: red;
+    width: 1200px;
+    height: 1000px;
+    size: A4;
+    font-size: large;
 }
