@@ -8,16 +8,40 @@
 
 </body>
 <script>
-    //bai 1
-  function findAvg(arr) {
-let sum=0;
-for (let i=0;i<arr.length;i++) {
-    sum+=arr[i];
-      }
-return sum/arr.length;
-  }
-let avg = findAvg([1,2,4,5,6,8,7,9]);
-  alert("diem trung binh la : " + avg);
+//     //bai 1
+//   function findAvg(arr) {
+// let sum=0;
+// for (let i=0;i<arr.length;i++) {
+//     sum+=arr[i];
+//       }
+// return sum/arr.length;
+//   }
+// let avg = findAvg([1,2,4,5,6,8,7,9]);
+//   alert("diem trung binh la : " + avg);
 
+
+//bai2
+
+function ktsnt(n) {
+    let demuoc = 0;
+    for (let i = 1; i <= n; i++) {
+        if (n % i == 0) demuoc++;
+    }
+    if (demuoc === 2) return n;
+}
+
+function sumOfListPrime(x) {
+    let sum = 0;
+    for (let i = 0; i <= x; i++) {
+        ktsnt(i);
+        if (ktsnt(i) == i) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+let b = sumOfListPrime(5);
+document.write(b);
 </script>
 </html>
