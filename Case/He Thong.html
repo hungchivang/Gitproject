@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Cho thuê phòng giá rẻ</title>
 </head>
 <body>
 <div id="div1">
-    <img src="anhchinh.gif" alt=""></div>
+    <img src="logo.jpg" alt=""></div>
+<div id="div11">
+    <h2>SMART HOME</h2>
+    <h3>VÌ CỘNG ĐỒNG - KIẾN TẠO AN CƯ </h3>
+</div>
 <div id="div2">
-    <table>
-        <tr>
-            <td onclick="dieuhuong()">TRANG CHỦ</td>
-            <td>GIỚI THIỆU</td>
-            <td>HỆ THỐNG PHÒNG</td>
-            <td>LIÊN HỆ</td>
-        </tr>
-    </table>
+    <div>TRANG CHỦ</div>
+    <div onclick="gioithieu()">GIỚI THIỆU</div>
+    <div onclick="hethongphong()">HỆ THỐNG PHÒNG</div>
+    <div>LIÊN HỆ</div>
+
 </div>
 <div class="image">
     <img id="img" src="anh1.jpg" onclick="changeImage()" alt="">
@@ -26,7 +27,9 @@
             <th colspan="10" style="font-size: 20px">Đặt Phòng</th>
         </tr>
         <tr>
-            <th colspan="10" style="font-size: 11px">Các trường được đánh dấu (*) là bắt buộc</th>
+            <th colspan="10" style="font-size: 11px">Các trường được đánh dấu (<span style="color: red">*</span>) là bắt
+                buộc
+            </th>
         </tr>
         <br/>
         <tr>
@@ -92,11 +95,6 @@
         <tbody id="show"></tbody>
     </table>
 </div>
-
-
-
-
-
 
 </body>
 <script src="main.js"></script>
