@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+
+<!--<canvas id="myCanvas" style="border: 4px solid black; width: 300px;height: 400px"></canvas>-->
+</body>
+<script>
+// <!--    class ball {-->
+// <!--        x;-->
+// <!--        y;-->
+// <!--        radius;-->
+// <!--        color;-->
+//
+// <!--        constructor(x, y, radius, color) {-->
+// <!--            this.x = x;-->
+// <!--            this.y = y;-->
+// <!--            this.radius = radius;-->
+// <!--            this.color = color;-->
+// <!--        }-->
+//
+// <!--        render() {-->
+// <!--            let context = document.getElementById("myCanvas").getContext("2d");-->
+// <!--            context.beginPath();-->
+// <!--            context.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);-->
+// <!--            context.fillStyle = this.color;-->
+// <!--            context.fill();-->
+// <!--        }-->
+// <!--    }-->
+// <!--function init() {-->
+// <!--    let myBall = new ball(150, 140, 5, "red");-->
+// <!--    myBall.render();-->
+// <!--}-->
+// <!--    function chay() {-->
+// <!--        window.addEventListener('keydown', dichuyen);-->
+// <!--    }-->
+// <!--    function dichuyen(event) {-->
+// <!--        switch (event.keyCode) {-->
+// <!--            case 37 :-->
+// <!--                trai();-->
+// <!--                break;-->
+// <!--            case 39:-->
+// <!--                phai();-->
+// <!--                break;-->
+// <!--            case 38 :-->
+// <!--                len();-->
+// <!--                break;-->
+// <!--            case 40:-->
+// <!--                xuong();-->
+// <!--                break;-->
+// <!--        }-->
+// <!--    }-->
+// <!--    function len() {-->
+// <!--        a.style.top = parseInt(a.style.top) -10 + "px";-->
+// <!--    }-->
+// <!--    function xuong() {-->
+// <!--        a.style.top = parseInt(a.style.top) + 10 + "px";-->
+// <!--    }-->
+// <!--    function trai() {-->
+// <!--        a.style.left = parseInt(a.style.left) - 10 + "px";-->
+// <!--    }-->
+// <!--    function phai() {-->
+// <!--        a.style.left = parseInt(a.style.left) + 10 + "px";-->
+// <!--    }-->
+
+let arr = [[0,1,2,3,5,6],
+           [8,9,4,2,-1],
+           [1,2,3,12,58]];
+let sum = 0;
+let sum1 = 0 ;
+for (let i=0;i<arr.length;i++) {
+    for (let j=0;j<5;j++){
+        arr[i] += arr[j];
+    }
+    sum += arr[i];
+
+}
+alert(sum);
+
+
+
+
+</script>
+</html>

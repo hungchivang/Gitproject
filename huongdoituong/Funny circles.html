@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<canvas id="myCanvas" style="border: 2px solid red"></canvas>
+<canvas id="myCanvas" style="border: 2px solid red;width: 800px;height: 500px"></canvas>
 </body>
 <script>
     function MyCircle(x, y, radius) {
@@ -23,13 +23,13 @@ function ColorRandom() {
 
     function Circle() {
         let context = document.getElementById("myCanvas").getContext("2d");
-        let x = Math.floor(Math.random() * innerWidth);
-        let y = Math.floor(Math.random() * innerHeight);
+        let x = Math.random() * window.innerWidth;
+        let y = Math.random() * window.innerHeight;
         let radius = Math.floor(Math.random() * 50);
         let color = ColorRandom();
-        let creta = new MyCircle(x, y, radius);
+        let create = new MyCircle(x, y, radius);
         context.beginPath();
-        context.arc(creta.a,creta.y,creta.radius,0,2*Math.PI);
+        context.arc(create.x,create.y,create.radius,0,2*Math.PI);
         context.fillStyle = color;
         context.fill();
     }

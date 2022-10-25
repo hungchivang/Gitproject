@@ -2,22 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cho thuê phòng giá rẻ</title>
 </head>
+
 <body>
-<div id="div1">
-    <img src="logo.jpg" alt=""></div>
-<div id="div11">
-    <h2>SMART HOME</h2>
-    <h3>VÌ CỘNG ĐỒNG - KIẾN TẠO AN CƯ </h3>
+<div class="header">
+    <div id="div1">
+        <img src="logo.jpg" alt="">
+    </div>
+    <div id="div11">
+        <h2>SMART HOME</h2>
+        <h3>VÌ CỘNG ĐỒNG - KIẾN TẠO AN CƯ </h3>
+    </div>
+    <div id="div12">
+        <div style="    margin-top: 63px; display: flex; margin-left: 120px;">
+            <div>
+                <input type="text" style="text-align: left; height: 27px;width: 200px" placeholder="Nhập từ khóa ...">
+            </div>
+            <div>
+                <button style="font-size: 13px; height: 33px; width: 40px"><i class="fa fa-search"></i></button>
+            </div>
+
+        </div>
+    </div>
 </div>
 <div id="div2">
-    <div>TRANG CHỦ</div>
+    <div>
+        <nav>
+            <div class="cha"> TRANG CHỦ
+                <ul class="con">
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Chung cư</a></li>
+                    <li><a href="#">Chung cư mini</a></li>
+                    <li><a href="#">Nhà trọ chung chủ</a></li>
+                    <li><a href="#">Dãy nhà trọ tự quản lý</a></li>
+                    <li><a href="#">Nhà trọ homestay</a></li>
+                    <li><a href="#">Phòng cao cấp</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
     <div onclick="gioithieu()">GIỚI THIỆU</div>
     <div onclick="hethongphong()">HỆ THỐNG PHÒNG</div>
     <div>LIÊN HỆ</div>
-
+    <div>
+        <nav>
+                <div class="cha">☰
+                    <ul class="con" style="right: 100px;">
+                        <li><a href="#">Thiết lập trạng thái</a></li>
+                        <li><a href="#">Cài đặt</a></li>
+                        <li><a href="#">Báo cáo</a></li>
+                        <li><a href="#">Phản hồi</a></li>
+                    </ul>
+                </div>
+        </nav>
+    </div>
 </div>
+
 <div class="image">
     <img id="img" src="anh1.jpg" onclick="changeImage()" alt="">
 </div>

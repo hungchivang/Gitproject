@@ -33,10 +33,11 @@ class Customer {
 
 let person1 = new Customer("Âu Mạnh Tường", "0368568751", "Vantu@gmail.com", "Một giường đôi", 2, 0, "2022-10-20", "2022-10-30");
 let person2 = new Customer("Nguyễn Phi Hùng", "0366684662", "hungnguyen@gmail.com", "Hai giường đôi", 5, 2, "2022-11-14", "2022-11-18");
-let person3 = new Customer("Mai Minh Phương", "0974492555", "phuongcoi@gmail.com", "Ba giường đôi", 7, 0, "2022-12-5", "2022-12-30");
-let person4 = new Customer("Trần Văn Tú", "0398384812", "tu182@gmail.com", "Phòng VIP", 3, 1, "2022-7-15", "2022-10-14");
+let person3 = new Customer("Mai Minh Phương", "0974492555", "phuongcoi@gmail.com", "Ba giường đôi", 7, 0, "2022-12-05", "2022-12-30");
+let person4 = new Customer("Trần Văn Tú", "0398384812", "tu182@gmail.com", "Phòng VIP", 3, 1, "2022-07-15", "2022-10-14");
 let my_customer = [person1, person2, person3, person4];
-let divshow = document.getElementById("show");
+
+    let divShow = document.getElementById("show");
 
 
 function show() {
@@ -56,7 +57,7 @@ function show() {
         srt += "<td style='width: 5%'><button style='background: lawngreen' onclick='xoa(" + i + ")'>Xóa</button></td>";
         srt += "</tr>";
     }
-    divshow.innerHTML = srt;
+    divShow.innerHTML = srt;
 }
 
 show();
@@ -70,8 +71,8 @@ function add() {
     let baby = document.getElementById("inputBaby").value;
     let checkin = document.getElementById("inputDayIn").value;
     let checkout = document.getElementById("inputDayOut").value;
-    let newmy_customer = new Object(name, phone, email, roomStyle, person, baby, checkin, checkout)
-    my_customer.push(newmy_customer);
+    let newMy_customer = new Customer(name, phone, email, roomStyle, person, baby, checkin, checkout)
+    my_customer.push(newMy_customer);
     show();
     Clear();
 }
@@ -113,8 +114,8 @@ function luu(index) {
     let baby = document.getElementById("inputBaby").value;
     let checkin = document.getElementById("inputDayIn").value;
     let checkout = document.getElementById("inputDayOut").value;
-    let newmy_customer = new Object(name, phone, email, roomStyle, person, baby, checkin, checkout)
-    my_customer.splice(index, 1, newmy_customer);
+    let newMy_customer = new Customer(name, phone, email, roomStyle, person, baby, checkin, checkout)
+    my_customer.splice(index, 1,newMy_customer);
     show();
     Clear();
 }
